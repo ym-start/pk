@@ -1,17 +1,66 @@
+@import "../fragment/yo-header";
+
+@include  yo-header(
+  $name:a,
+  $bgcolor:#fff,
+  $item-ico-color:#808080,
+  $border-width:0,
+  $color:#fff,
+  $font-size:.12rem
+){
+  .regret{
+    right:auto;
+    left: 0;
+  }
+.inpm{        //input设置
+    width:1.8rem;
+    height: 0.3rem;
+    border-radius: 9px;
+
+  }
+}
+
+
+
+
 .m-index {
   height: 100%;
   @include flexbox();
   @include flex-direction(column);
-  header {
-    height: 44px;
-    background: red;
-  }
   section {
     @include flex(1);
-    background: gray;
+    background: #fff;
   }
   nav {
-    height: 44px;
-    background: yellow;
+    border-top: 0.5px solid #ddd;
+    height:.50rem;
+    background: #f9fafc;
+    ul{
+      width: 100%;
+      height: 100%;
+      @include flexbox();
+      li{
+        @include flex();
+        span{
+          @include flexbox();
+          @include flex-direction(column);
+          @include justify-content(content );
+          @include align-items(center);
+          // color: #65686d;
+          padding-top:.08rem;
+          line-height: .21rem;
+        font-size: .23rem;
+          b{
+            color: #9b9c9e;
+            font-size: .12rem;
+            font-weight: normal;
+          }
+        }
+        &.active span{
+          color: red;
+
+        }
+      }
+    }
   }
 }
