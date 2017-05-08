@@ -2,18 +2,18 @@
 
 @include  yo-header(
   $name:a,
-  $bgcolor:#fff,
-  $item-ico-color:#808080,
+  $bgcolor:#ff6600,
+  $item-ico-color:#fff,
   $border-width:0,
   $color:#fff,
-  $font-size:.12rem
+  $font-size:.15rem
 ){
   .regret{
     right:auto;
     left: 0;
   }
 .inpm{        //input设置
-    width:1.8rem;
+    // width:1.8rem;
     height: 0.3rem;
     border-radius: 9px;
 
@@ -32,7 +32,6 @@
     background: #fff;
   }
   nav {
-    border-top: 0.5px solid #ddd;
     height:.50rem;
     background: #f9fafc;
     ul{

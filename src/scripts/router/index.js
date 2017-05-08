@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Index from '@/scripts/components/Index'
 import Board from '@/scripts/components/Board'
 import Search from '@/scripts/components/Search'
-import  Atom from '@/scripts/components/Atom'
 import  Min from '@/scripts/components/Min'
 import  Cart from '@/scripts/components/Cart'
 
@@ -29,9 +28,6 @@ export default new Router({
           component:Search
         },
         {
-          path:'atom',
-          component:Atom
-        },{
           path:'min',
           component:Min
         },
