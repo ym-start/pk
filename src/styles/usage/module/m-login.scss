@@ -1,0 +1,39 @@
+.login1{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+
+header {
+
+ 	 width:100%;
+ 	 height:.44rem;
+ 	 background:#ff6600;
+ 	text-align:center;
+ 	 line-height:.44rem;
+
+ }
+header>p{
+	 color:#fff;
+ 	 font-size:.17rem;
+	text-align:center;
+	float:left;
+	height:.44rem;
+	position:absolute;
+	left:40%;
+
+}
+header>span{
+	float:left;
+	color:#fff;
+	font-size:.20rem;
+	font-weight:normal;
+	margin-left:.12rem;
+}
+header>.you{
+	float:right;
+	color:#fff;
+	font-size:.36rem;
+	font-weight:normal;
+	margin-right:.12rem;
+}

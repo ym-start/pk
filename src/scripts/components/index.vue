@@ -1,10 +1,9 @@
  <!-- <link rel="stylesheet" href="iconfont/iconfont.ttf"> -->
 <template>
   <div class="m-index">
-      <header class="yo-header yo-header-a">
-          <img src="">
-          <span class="affirm yo-ico">&#x3575;</span>
-      </header>
+ 
+    
+      
     <section>
         <router-view></router-view>
     </section>

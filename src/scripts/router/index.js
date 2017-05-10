@@ -5,6 +5,8 @@ import Board from '@/scripts/components/Board'
 import Search from '@/scripts/components/Search'
 import  Min from '@/scripts/components/Min'
 import  Cart from '@/scripts/components/Cart'
+import  Login from '@/scripts/components/Login'
+
 
 Vue.use(Router)
 
@@ -34,6 +36,10 @@ export default new Router({
         {
           path:'cart',
           component:Cart
+        },
+        {
+          path:'login',
+          component:Login
         }
       ]
     }
