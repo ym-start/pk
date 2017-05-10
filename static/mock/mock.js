@@ -1,7 +1,7 @@
-let swiper = require('./swiper.json')
+let board = require('./board.json')
 
 module.exports = function(){
   return {
-    'swiper':swiper
+    'board':board
   }
 }
