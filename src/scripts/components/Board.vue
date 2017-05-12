@@ -49,16 +49,55 @@
       <a class="after">查看全部鲜花></a>
     </div>
     <a>
-        <img src="http://img02.hua.com/m/icon/cake_banner.jpg" >
+        <img src="http://img02.hua.com/m/icon/cake_banner.jpg" />
     </a>
-    <div class="z">
-      <p class="hao">好吃又好看才是心水的蛋糕</p>
+    <div class="iv">
+         <p class="hao">好吃又好看才是心水的蛋糕</p>
     </div>
+    <!-- 母爱 -->
+    <div class="mi">
+      <!-- <div class="">送至：  </div> -->
+        <div  v-for="(item,index) in databoard" :key="index">
+          <img :src="item.img" alt="">
+          <p class="sp"><span>{{item.pi}}</span></p>
+          <p class="xn">{{item.mi}}</p>
+          <p class="zz">{{item.price}} <del>{{item.del}}</del></p>
 
+      </div>
+    </div>
+<!--精选 集  -->
+    <mt-swipe :auto="3000"  style="margin-top:10px;">
+      <mt-swipe-item><img src="http://img02.hua.com/slider/banner_gift02.png" /></mt-swipe-item>
+      <mt-swipe-item><img src="http://img02.hua.com/slider/banner_gift01.png" /></mt-swipe-item>
+      <mt-swipe-item><img src="http://img02.hua.com/slider/banner_gift03.png" /></mt-swipe-item>
+    </mt-swipe>
+    <div class="list">
+        <p>金箔花</p>
+        <p>泰国保鲜花</p>
+        <p>音乐盒</p>
+        <p>巧克力</p>
+        <p>水晶内雕</p>
+        <p>首饰</p>
+        <p>化妆镜</p>
+        <p>更多...</p>
+    </div>
+    <!-- 金箔 -->
+    <div class="mi">
+      <!-- <div class="">送至：  </div> -->
+        <div  v-for="(item,index) in databoard" :key="index">
+          <img :src="item.img" alt="">
+          <p class="sp"><span>{{item.pi}}</span></p>
+          <p class="xn">{{item.mi}}</p>
+          <p class="zz">{{item.price}} <del>{{item.del}}</del></p>
 
+      </div>
+    </div>
+    <!--永生花精选  -->
+    <div class="pp">
+        <div class="one">
 
-
-
+        </div>
+    </div>
 
 
 
@@ -80,8 +119,11 @@ import utilAxios from '../utils/axios';
 export default {
     data() {
      return {
-       dataSource: []
+       dataSource: [],
+       databoard:[],
+       datatwo:[]
      }
+
    },
 
    mounted: function () {
@@ -92,12 +134,43 @@ export default {
        method: 'get',
        callback: function (res) {
          that.dataSource = that.dataSource.concat(res.data)
-           console.log(that.dataSource[1].title)
-          console.log(that.dataSource[1].title)
+           //console.log(that.dataSource[1].title)
+          // console.log(that.dataSource[1].title)
+       }
+     }),
+
+     utilAxios.get({
+       url: 'http://localhost:3000/board_a',
+       method: 'get',
+       callback: function (res) {
+         that.databoard = that.databoard.concat(res.data[0].one)
+         //that.dataSource = that.dataSource.concat(res.data)
+          // console.log(that.dataSource[0].title)
+            //that.databoard = res.data[0].one[0]
        }
      })
+
+     utilAxios.get({
+       url: 'http://localhost:3000/board_a',
+       method: 'get',
+       callback: function (res) {
+         //that.datatwo = that.datatwo.concat(res.data[0].one)
+         //that.dataSource = that.dataSource.concat(res.data)
+          // console.log(that.dataSource[0].title)
+            console.log(that.datatwo = res.data[1].two)
+       }
+     })
+
+
+
    }
 
 }
+
+
+
+
+
+
 
 </script>
