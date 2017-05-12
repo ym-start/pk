@@ -1,0 +1,88 @@
+@import "../fragment/yo-header";
+.m-search{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: .44rem;
+    left: 0;
+    .el-tabs{
+        @include flexbox();
+        height: 560px;
+        .el-tabs__header{
+            height: 500px;
+            background: #f3f3f5;
+            @include flex(1);
+            .el-tabs__nav-wrap{
+                height: 100%;
+                width: 100%;
+                .el-tabs__nav-scroll{
+                    height: 100%;
+                    width: 100%;
+                    .el-tabs__nav{
+                        height: 100%;
+                        width: 100%;
+                        .el-tabs__item{
+                            line-height: .46rem;
+                            text-align: center;
+                            border-bottom: 1px solid #ccc;
+                            border-right: 1px solid #ccc;
+                        }
+                        .el-tabs__item.is-active{
+                            border-right: none;
+                            background: #fff;
+                            color: orange;
+                        }
+                     }    
+                }  
+            }
+        }
+        .el-tabs__content{
+            @include flex(3);
+            height: 100%;;
+            margin: .10rem;
+            overflow-y:scroll; 
+            .s-banner{
+                height: .84rem;
+                width: 100%;
+                background: hotpink;
+                img{
+                    height: .84rem;
+                    width: 100%;
+                }
+            }
+            .s-list{
+                height: 460px;
+                width: 100%;
+                h3{
+                    margin-top: .25rem;
+                    width: 100%;
+                    color: #aaa;
+                    height: .14rem;
+                }
+                ul{
+                    height: 100%;
+                    width: 100%;
+                    li{
+                        height: .66rem;
+                        width: 33.3%;
+                        float: left;
+                        margin-top: .10rem;
+                        text-align: center;
+                        img{
+                            height: .50rem;
+                            width: .50rem;
+                        }
+                        p{
+                            height: .16rem;
+                            width: 100%;
+                            color: #666;
+                            line-height: .20rem;
+                            font-size: .12rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+     
+}

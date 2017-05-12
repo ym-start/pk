@@ -1,0 +1,16 @@
+[
+    {
+    "Img":
+        [
+            {"id":"1","img":"http://img02.hua.com/app/api/flower/huacai/rose.png","tle":"幸福万年长/红色康乃馨66枝，白色紫边","price":"￥359","bgp":"母亲节新品特价"},
+            {"id":"2","img":"http://img02.hua.com/app/api/flower/yongtu/kaiye.png","tle":"商用鲜花","price":"￥359"},
+            {"id":"3","img":"http://img02.hua.com/app/api/use/yongshenghua.png","tle":"永生花","price":"￥359"},
+            {"id":"4","img":"http://img02.hua.com/app/api/use/dangao.png","tle":"蛋糕","price":"￥359"},
+            {"id":"5","img":"http://img02.hua.com/app/api/gift/jinkouqiaokeli.png","tle":"巧克力","price":"￥359"},
+            {"id":"6","img":"http://img02.hua.com/app/api/use/lipin.png","tle":"特色礼品","price":"￥359"},
+            {"id":"7","img":"http://img02.hua.com/app/api/use/gongzai.png","tle":"品牌公仔","price":"￥359"},
+            {"id":"8","img":"http://img02.hua.com/app/api/use/lilan.png","tle":"礼蓝","price":"￥359"},
+            {"id":"9","img":"http://img02.hua.com/app/api/use/lvzhi.png","tle":"绿色花卉","price":"￥359"}
+        ]
+    }
+]

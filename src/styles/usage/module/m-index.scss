@@ -28,8 +28,9 @@
   @include flexbox();
   @include flex-direction(column);
   section {
-    @include flex(1);
+    @include flex();
     background: #fff;
+    width: 100%;
   }
   nav {
     height:.50rem;

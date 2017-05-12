@@ -1,0 +1,33 @@
+@import "../fragment/yo-header";
+
+.p-list{
+    header{
+        height: .44rem;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    nav{
+        height: .44rem;
+        width: 100%;
+        ul{
+            @include flexbox();
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            li{
+                @include flex();
+                line-height: .44rem;
+                text-align: center;
+                color: #999;
+                border-bottom: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+            }
+            li:nth-child(1){border-left: none}
+        }
+    }
+    section{
+        height: 100%;
+        background: #fff;
+        width: 100%;
+    }
+}
